@@ -1,22 +1,22 @@
 import java.util.Scanner;
 public class Kviz {
 
-  int broj1;
+    int broj1;
 	int broj2;
 	
-  Scanner input=new Scanner(System.in);
-Kviz(){
+    Scanner input=new Scanner(System.in);
+    Kviz(){
 			}
 
-Kviz(int randomBroj1, int randomBroj2) {
+    Kviz(int randomBroj1, int randomBroj2) {
 			broj1 = randomBroj1;
 			broj2 = randomBroj2;
 		}
-
+    
 	public void Sabiranje() {
 	}
 
-	public void razlika(double broj1, double broj2) {
+	public void Oduzimanje() {
 		System.out.println("Koliko iznosi: " + broj1 + "-" + broj2 + "?");
 		int odgovor=input.nextInt();
 		if(odgovor==(broj1 - broj2))
@@ -44,7 +44,7 @@ Kviz(int randomBroj1, int randomBroj2) {
 			System.out.println("Nazalost, pogrijesili ste!");
 	}
 	
-public void Korjenovanje() {
+	public void Korjenovanje() {
 			System.out.println("Koliko iznosi: sqrt" + broj1 + "?");
 			int odgovor=input.nextInt();
 			if(odgovor==(Math.sqrt(broj1)))
@@ -54,7 +54,7 @@ public void Korjenovanje() {
 
 		}
 
-		public void Kvadriranje() {
+	public void Kvadriranje() {
 			System.out.println("Koliko iznosi: " + broj1 + "*" + broj1 + "?");
 			int odgovor=input.nextInt();
 			if(odgovor==(Math.pow(broj1, 2)))
