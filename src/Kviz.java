@@ -1,5 +1,9 @@
+import java.util.Scanner;
 
 public class Kviz {
+	int broj1;
+	int broj2;
+	Scanner input=new Scanner(System.in);
 
 	public double zbir(double a, double b) {
 		return 0;
@@ -9,19 +13,24 @@ public class Kviz {
 		return 0;
 	}
 
-	public double proizvod(double a, double b) {
-		return 0;
+	public void Mnozenje() {
+		System.out.println("Koliko iznosi: " + broj1 + "*" + broj2 + "?");
+		int odgovor=input.nextInt();
+		if(odgovor==(broj1*broj2))
+		System.out.println("Odlicno! Vas odgovor je tacan!");
+		else
+			System.out.println("Nazalost, pogrijesili ste!");
 	}
 
-	public double vratiDijeljenje(double a, double b) {
-		if (b == 0) {
-			System.out.println("Greska.");
-			return 0;
-		} else
-			return a / b;
-
+	public void Dijeljenje() {
+		System.out.println("Koliko iznosi: " + broj1 + "/" + broj2 + "?");
+		int odgovor=input.nextInt();
+		if(odgovor==(broj1/broj2))
+		System.out.println("Odlicno! Vas odgovor je tacan!");
+		else
+			System.out.println("Nazalost, pogrijesili ste!");
 	}
-
+	
 	public double vratiKorijen(double a) {
 		return 0;
 	}
