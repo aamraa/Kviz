@@ -2,7 +2,10 @@
 public class Kviz {
 
 	public double zbir(double a, double b) {
-		return 0;
+		a = (double) Math.random()*11;
+		b = (double) Math.random()*11;
+		double saberi = a + b ;
+		return saberi;
 	}
 
 	public double razlika(double a, double b) {
