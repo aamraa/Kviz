@@ -1,11 +1,15 @@
+import java.util.Scanner;
 
 public class Kviz {
+	Scanner input = new Scanner(System.in);
 
-	public double zbir(double a, double b) {
-		a = (double) Math.random()*11;
-		b = (double) Math.random()*11;
-		double saberi = a + b ;
-		return saberi;
+	public void Sabiranje(double broj1, double broj2) {
+		System.out.println("Koliko iznosi: " + broj1 + "+" + broj2 + "?");
+		int odgovor = input.nextInt();
+		if (odgovor == (broj1 + broj2))
+			System.out.println("Odlicno! Vas odgovor je tacan!");
+		else
+			System.out.println("Nazalost, pogrijesili ste!");
 	}
 
 	public double razlika(double a, double b) {
@@ -33,7 +37,4 @@ public class Kviz {
 		return 0;
 	}
 
-	
 }
-
-
